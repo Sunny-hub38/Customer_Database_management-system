@@ -1,0 +1,45 @@
+CREATE TABLE cust_profile
+(cust_id int NOT NULL PRIMARY KEY,
+first_name varchar(30) NOT NULL, 
+last_name varchar(30) NOT NULL, 
+email varchar(30) NOT NULL,
+Age int NOT NULL,
+Gender char(50));
+
+
+INSERT INTO cust_profile VALUES('100', 'Manish', 'Sharma', 'm.sharma@gmail.com', 27, 'Male');
+INSERT INTO cust_profile VALUES('101', 'Mansi', 'Singh', 'm.singh01@gmail.com', 24, 'Female');
+INSERT INTO cust_profile VALUES('102', 'Tanya', 'Shinde', 't.shinde@gmail.com', 17, 'Female');
+INSERT INTO cust_profile VALUES('103', 'Prakash', 'Rathore', 'prakash.rathore@gmail.com', 45, 'Male');
+INSERT INTO cust_profile VALUES('104', 'Rajesh', 'Shetty', 'rajesh.shetty@yahoo.com', 35, 'Male');
+INSERT INTO cust_profile VALUES('105', 'Priya', 'Patel', 'priya.patel@gmal.com', 32, 'Female');
+INSERT INTO cust_profile VALUES('106', 'Ajay', 'Agarwal', 'ajay.agarwal@gmail.com', 22, 'Male');
+INSERT INTO cust_profile VALUES('107', 'Adam', 'Dsouza', 'adam.dsouza@gmal.com', 26, 'Male');
+INSERT INTO cust_profile VALUES('108', 'Sheetal', 'Varthak', 'sheetal.varthak011@yahoo.com', 24, 'Female');
+INSERT INTO cust_profile VALUES('109', 'Anant', 'Srinivasan', 'anant.srinivasan@gmail.com', 55, 'Male');
+INSERT INTO cust_profile VALUES('110', 'Pooja', 'Jain', 'pooja.jain@gmail.com', 36, 'Female');
+INSERT INTO cust_profile VALUES('111', 'Siman', 'kaur', 'simran.kaur@gmail.com', 26, 'Female');
+INSERT INTO cust_profile VALUES('112', 'Chinmay', 'Nimkar', 'chinmay.nimkar@yahoo.com', 22, 'Male');
+INSERT INTO cust_profile VALUES('113', 'Sara', 'Kaur', 'sarakaur@yahoo.com', 23, 'Female');
+INSERT INTO cust_profile VALUES('114', 'Aman', 'Gupta', 'aman.gupta', 38, 'Male');
+INSERT INTO cust_profile VALUES('115', 'Saniya', 'Mishra', 'Saniya.Mishra@gmail.com', 15, 'Female');
+INSERT INTO cust_profile VALUES('116', 'Priya', 'Shetty', 'p.shetty@gmail.com', 27, 'Female');
+INSERT INTO cust_profile VALUES('117', 'Manoj', 'Singh', 'manoj.singh@yahoo.com', 48, 'Male');
+INSERT INTO cust_profile VALUES('118', 'Mansi', 'Ghodke', 'Mansi.ghodke@gmail.com', 31, 'Female');
+INSERT INTO cust_profile VALUES('119', 'Jeya', 'Thakkar', 'j.thakkar@yahoo.com', 21, 'Female');
+INSERT INTO cust_profile VALUES('120', 'Amaan', 'Shaikh', 'amaan.shaikh@gmail.com', 48, 'Male');
+
+Select * from cust_profile;
+
+Alter table cust_profile
+ADD location_id INT;
+
+CREATE table address(
+location_id int Primary key Not NUll,
+Street_name varchar(255) Not Null,
+city char(20),
+State char(20),
+Postal_code int Not Null)
+
+
+
